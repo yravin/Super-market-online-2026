@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | AEON Shopping</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/Css/form.css">
+</head>
+<body>
+    <div class="login-wrapper">
+        <div class="login-left">
+            <div class="brand-logo"><i class="fas fa-shopping-bag"></i> AEON SHOP</div>
+            <h1 class="welcome-text">Experience the New Era of Shopping</h1>
+            <ul class="feature-list">
+                <li><i class="fas fa-shield-alt"></i> Security Multi-layered protection</li>
+                <li><i class="fas fa-rocket"></i> Fast Delivery within 24 hours</li>
+                <li><i class="fas fa-tags"></i> Exclusive Member Discounts</li>
+            </ul>
+        </div>
+
+        <div class="login-right">
+            <div class="login-header">
+                <h2>register</h2>
+                <span id="roleIndicator" class="role-badge">Standard User</span>
+            </div>
+
+            <form id="loginForm">
+                <div class="input-group">
+                    <label class="input-label">Email Address</label>
+                    <input type="email" id="email" class="input-field" placeholder="name@example.com" required>
+                    <i class="fas fa-envelope input-icon"></i>
+                </div>
+
+                <div class="input-group">
+                    <label class="input-label">Password</label>
+                    <input type="password" id="password" class="input-field" placeholder="••••••••" required>
+                    <i class="fas fa-lock input-icon"></i>
+                    <i class="fas fa-eye input-icon password-toggle" id="togglePassword"></i>
+                </div>
+
+                <div class="input-group">
+                <label class="input-label">Confirm Password</label>
+                <input type="password" id="confirmPassword" class="input-field" placeholder="••••••••" required>
+                 <i class="fas fa-lock input-icon"></i>
+                 <i class="fas fa-eye input-icon password-toggle" id="toggleConfirmPassword"></i>
+                   </div>
+
+                <div class="remember-forgot">
+                    <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                        <input type="checkbox" id="remember"> Remember me
+                    </label>
+                    <a href="#" style="color: #667eea; text-decoration: none; font-weight: 600;">Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="btn-login" id="loginBtn">
+                    <span id="btnText">Sign In</span>
+                    <div class="loading-spinner" id="spinner"></div>
+                </button>
+            </form>
+
+            <div style="text-align: center; margin-top: 30px; font-size: 14px; color: #666;">
+                New here? <a href="./Login.html" style="color: #667eea; font-weight: 700; text-decoration: none;">Login Account</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="notification" id="notification"></div>
+    <script src="/Js/resgester.js"></script>
+</body>
+</html>
